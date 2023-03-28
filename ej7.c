@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[])
 {
     float a[10];
-    printf("Ingrese 10 numeros reales");
+    printf("Ingrese 10 numeros reales\n");
     for (int i = 0; i < 10; i++)
     {
         int num;
@@ -17,5 +17,9 @@ int main(int argc, char const *argv[])
     }
     prom /= 10;
     
+    for (int i = 0; i < 10;i++){
+        if(a[i] > prom) printf("%d ", a[i]);
+    }
+    printf("\n");
     return 0;
 }
