@@ -10,9 +10,8 @@ int main(int argc, char const *argv[])
     scanf("%d %d", &a[0],&a[1]);
     printf("Ingrese el segundo vector\n");
     scanf("%d %d", &b[0],&b[1]);
-    double ang_a =  atan2(a[1], a[0]) * 180.0 / PI;
-    double ang_b =  atan2(b[1], b[0]) * 180.0 / PI;
-    if (ang_a == ang_b){
+    int det = a[0] * b[1] - a[1] - b[0];
+    if (det == 0){
         printf("Esos dos vectores son linealmente dependientes");
     } else{
         printf("Esos dos vectores no son linealmente dependientes");
