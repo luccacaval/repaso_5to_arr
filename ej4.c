@@ -2,6 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
+    // 
     int a[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
     printf("Ingrese un mes y una fecha\n Ej:Enero = 1 Diciembre = 12\n");
     int mes;
