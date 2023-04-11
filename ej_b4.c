@@ -66,7 +66,7 @@ int det_a = det3(a);
 for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
             d[i][j] = a[j][i];
-            d[i][j] /= det_a;
+            a[i][j] /= det_a;
         }
     }
 // Imprimir la matriz inversa
